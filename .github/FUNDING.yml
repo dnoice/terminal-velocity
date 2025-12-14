@@ -1,0 +1,35 @@
+# ==============================================================================
+# ✒ Metadata
+#     - Title: GitHub Funding Configuration (Terminal Velocity - v1.0)
+#     - File Name: FUNDING.yml
+#     - Relative Path: .github/FUNDING.yml
+#     - Artifact Type: config
+#     - Version: 1.0.0
+#     - Date: 2025-12-14
+#     - Update: Sunday, December 14, 2025
+#     - Author: Dennis 'dnoice' Smaltz
+#     - A.I. Acknowledgement: Anthropic - Claude Opus 4.5
+#     - Signature:  ︻デ═—··· 🎯 = Aim Twice, Shoot Once!
+#
+# ✒ Description:
+#     GitHub Sponsors and funding platform configuration. Uncomment and
+#     configure the platforms you want to enable for project support.
+# ==============================================================================
+
+# Terminal Velocity Funding
+# Uncomment and configure the platforms you want to enable
+
+# GitHub Sponsors
+# github: dnoice
+
+# Patreon
+# patreon: username
+
+# Open Collective
+# open_collective: terminal-velocity
+
+# Ko-fi
+# ko_fi: username
+
+# Custom links (up to 4)
+# custom: ["https://example.com/sponsor"]
