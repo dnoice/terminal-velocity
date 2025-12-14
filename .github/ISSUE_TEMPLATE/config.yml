@@ -1,0 +1,29 @@
+# ==============================================================================
+# ✒ Metadata
+#     - Title: Issue Template Config (Terminal Velocity - v1.0)
+#     - File Name: config.yml
+#     - Relative Path: .github/ISSUE_TEMPLATE/config.yml
+#     - Artifact Type: config
+#     - Version: 1.0.0
+#     - Date: 2025-12-14
+#     - Update: Sunday, December 14, 2025
+#     - Author: Dennis 'dnoice' Smaltz
+#     - A.I. Acknowledgement: Anthropic - Claude Opus 4.5
+#     - Signature:  ︻デ═—··· 🎯 = Aim Twice, Shoot Once!
+#
+# ✒ Description:
+#     GitHub issue template chooser configuration. Disables blank issues
+#     and provides contact links to documentation and discussions.
+# ==============================================================================
+
+blank_issues_enabled: false
+contact_links:
+  - name: 📖 Documentation
+    url: https://github.com/dnoice/terminal-velocity/tree/main/docs
+    about: Check the docs before opening an issue
+  - name: 💬 Discussions
+    url: https://github.com/dnoice/terminal-velocity/discussions
+    about: Ask questions and discuss ideas
+  - name: 📋 Blueprint
+    url: https://github.com/dnoice/terminal-velocity/blob/main/docs/blueprints/TERMINAL_VELOCITY_BLUEPRINT.md
+    about: Read the full framework specification
