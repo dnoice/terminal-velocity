@@ -1,0 +1,58 @@
+# ==============================================================================
+# ✒ Metadata
+#     - Title: Citation File (Terminal Velocity - v1.0)
+#     - File Name: CITATION.cff
+#     - Relative Path: CITATION.cff
+#     - Artifact Type: config
+#     - Version: 1.0.0
+#     - Date: 2025-12-14
+#     - Update: Sunday, December 14, 2025
+#     - Author: Dennis 'dnoice' Smaltz
+#     - A.I. Acknowledgement: Anthropic - Claude Opus 4.5
+#     - Signature:  ︻デ═—··· 🎯 = Aim Twice, Shoot Once!
+#
+# ✒ Description:
+#     Citation File Format (CFF) for standardized academic citation of the
+#     Terminal Velocity research framework. Enables "Cite this repository"
+#     button on GitHub.
+# ==============================================================================
+
+cff-version: 1.2.0
+title: "Terminal Velocity: A Forensic Investigation into Civilizational Self-Destruction"
+message: "If you use this research framework, please cite it as below."
+type: software
+authors:
+  - family-names: "Smaltz"
+    given-names: "Dennis"
+    alias: "dnoice"
+repository-code: "https://github.com/dnoice/terminal-velocity"
+url: "https://github.com/dnoice/terminal-velocity"
+abstract: >-
+  Terminal Velocity is a forensic research framework for documenting 
+  mechanisms by which industrial civilization accelerates toward hard 
+  planetary boundaries. It provides structured templates, evidence 
+  grading systems, and computational tools for rigorous documentation 
+  of sustainability conflicts.
+keywords:
+  - sustainability
+  - environmental research
+  - climate change
+  - biodiversity loss
+  - forensic documentation
+  - research framework
+  - mechanism mapping
+license: Apache-2.0
+version: "1.0.0"
+date-released: "2025-12-14"
+
+# Preferred citation
+preferred-citation:
+  type: software
+  title: "Terminal Velocity Research Framework"
+  authors:
+    - family-names: "Smaltz"
+      given-names: "Dennis"
+      alias: "dnoice"
+  year: 2025
+  url: "https://github.com/dnoice/terminal-velocity"
+  license: Apache-2.0
