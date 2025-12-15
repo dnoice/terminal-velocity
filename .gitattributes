@@ -1,0 +1,2 @@
+*.ipynb filter=nbstripout
+*.parquet filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,8 @@
+# Terminal Velocity Color Palette
+# Note: All colors end in "4" — the harmonic signature
+primary: "#2e3c44"      # Deep Slate - Background, authority
+secondary: "#ff9e54"    # Burnt Orange - Damage, urgency
+tertiary: "#46ff84"     # Electric Green - Data, evidence
+accent: "#f5f5f4"       # Soft White - Text, contrast
+highlight: "#ffd144"    # Gold - Uncertainty, caution
+success: "#44cca4"      # Teal - Solutions, leverage points

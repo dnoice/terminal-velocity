@@ -1,0 +1,5 @@
+# Pip requirements (generated from environment.yml)
+pandas>=2.0
+numpy>=1.24
+matplotlib>=3.7
+rich>=13.0

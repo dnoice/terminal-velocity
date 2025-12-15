@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wc:*)",
+      "Bash(python tools/tv_scaffold.py:*)",
+      "Bash(set PYTHONIOENCODING=utf-8:*)",
+      "Bash(dir:*)",
+      "Bash(python:*)",
+      "Bash(echo:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}

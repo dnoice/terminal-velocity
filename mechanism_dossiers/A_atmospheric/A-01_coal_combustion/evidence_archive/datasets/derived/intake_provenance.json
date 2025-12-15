@@ -1,0 +1,203 @@
+{
+  "mechanism": "A-01",
+  "pipeline": "01_intake",
+  "run_timestamp": "2025-12-14T17:05:12.079562",
+  "data_sources": {
+    "owid_co2": {
+      "url": "https://raw.githubusercontent.com/owid/co2-data/master/owid-co2-data.csv",
+      "description": "CO2 and GHG emissions by country (Global Carbon Project)",
+      "license": "CC-BY 4.0",
+      "citation": "Global Carbon Project via Our World in Data",
+      "local_file": "owid_co2_data.csv",
+      "key_columns": [
+        "country",
+        "year",
+        "co2",
+        "coal_co2",
+        "co2_per_capita"
+      ]
+    },
+    "owid_energy": {
+      "url": "https://raw.githubusercontent.com/owid/energy-data/master/owid-energy-data.csv",
+      "description": "Energy consumption by country (Energy Institute)",
+      "license": "CC-BY 4.0",
+      "citation": "Energy Institute Statistical Review via Our World in Data",
+      "local_file": "owid_energy_data.csv",
+      "key_columns": [
+        "country",
+        "year",
+        "coal_consumption",
+        "coal_share_energy",
+        "coal_electricity"
+      ]
+    }
+  },
+  "quality_reports": {
+    "coal_emissions": {
+      "dataset": "coal_emissions",
+      "total_rows": 31584,
+      "total_columns": 18,
+      "null_counts": {
+        "country": 0,
+        "iso_code": 4334,
+        "year": 0,
+        "population": 3935,
+        "co2": 8179,
+        "coal_co2": 14388,
+        "oil_co2": 10327,
+        "gas_co2": 17603,
+        "co2_per_capita": 9863,
+        "co2_growth_prct": 9884,
+        "co2_growth_abs": 9688,
+        "coal_co2_per_capita": 14668,
+        "share_global_co2": 9500,
+        "cumulative_co2": 9500,
+        "cumulative_coal_co2": 14388,
+        "source": 0,
+        "unit_co2": 0,
+        "access_date": 0
+      },
+      "null_percentages": {
+        "country": 0.0,
+        "iso_code": 13.72,
+        "year": 0.0,
+        "population": 12.46,
+        "co2": 25.9,
+        "coal_co2": 45.55,
+        "oil_co2": 32.7,
+        "gas_co2": 55.73,
+        "co2_per_capita": 31.23,
+        "co2_growth_prct": 31.29,
+        "co2_growth_abs": 30.67,
+        "coal_co2_per_capita": 46.44,
+        "share_global_co2": 30.08,
+        "cumulative_co2": 30.08,
+        "cumulative_coal_co2": 45.55,
+        "source": 0.0,
+        "unit_co2": 0.0,
+        "access_date": 0.0
+      },
+      "duplicates": "0",
+      "memory_mb": 12.811501502990723,
+      "year_range": "1900-2024",
+      "year_gaps": [],
+      "unique_countries": 254
+    },
+    "coal_consumption": {
+      "dataset": "coal_consumption",
+      "total_rows": 15525,
+      "total_columns": 15,
+      "null_counts": {
+        "country": 0,
+        "iso_code": 4406,
+        "year": 0,
+        "population": 3621,
+        "primary_energy_consumption": 2270,
+        "coal_consumption": 9120,
+        "coal_share_energy": 9146,
+        "coal_share_elec": 8453,
+        "coal_electricity": 8350,
+        "coal_production": 4553,
+        "electricity_generation": 7544,
+        "electricity_demand": 9423,
+        "source": 0,
+        "unit_consumption": 0,
+        "access_date": 0
+      },
+      "null_percentages": {
+        "country": 0.0,
+        "iso_code": 28.38,
+        "year": 0.0,
+        "population": 23.32,
+        "primary_energy_consumption": 14.62,
+        "coal_consumption": 58.74,
+        "coal_share_energy": 58.91,
+        "coal_share_elec": 54.45,
+        "coal_electricity": 53.78,
+        "coal_production": 29.33,
+        "electricity_generation": 48.59,
+        "electricity_demand": 60.7,
+        "source": 0.0,
+        "unit_consumption": 0.0,
+        "access_date": 0.0
+      },
+      "duplicates": "0",
+      "memory_mb": 5.903826713562012,
+      "year_range": "1965-2024",
+      "year_gaps": [],
+      "unique_countries": 314
+    }
+  },
+  "actions": [
+    {
+      "timestamp": "2025-12-14T17:05:09.332936",
+      "action": "Pipeline started",
+      "notes": "Mechanism A-01"
+    },
+    {
+      "timestamp": "2025-12-14T17:05:09.333111",
+      "action": "Using cached owid_co2",
+      "notes": "..\\datasets\\raw\\owid_co2_data.csv"
+    },
+    {
+      "timestamp": "2025-12-14T17:05:09.333222",
+      "action": "Using cached owid_energy",
+      "notes": "..\\datasets\\raw\\owid_energy_data.csv"
+    },
+    {
+      "timestamp": "2025-12-14T17:05:09.846500",
+      "action": "Loaded owid_co2",
+      "notes": "50,411 rows, 79 columns"
+    },
+    {
+      "timestamp": "2025-12-14T17:05:09.846743",
+      "action": "Schema validation passed for owid_co2",
+      "notes": "5 required columns found"
+    },
+    {
+      "timestamp": "2025-12-14T17:05:10.214547",
+      "action": "Loaded owid_energy",
+      "notes": "23,195 rows, 130 columns"
+    },
+    {
+      "timestamp": "2025-12-14T17:05:10.214692",
+      "action": "Schema validation passed for owid_energy",
+      "notes": "5 required columns found"
+    },
+    {
+      "timestamp": "2025-12-14T17:05:10.279269",
+      "action": "Processed coal emissions",
+      "notes": "31,584 rows, 1900-2024"
+    },
+    {
+      "timestamp": "2025-12-14T17:05:10.332145",
+      "action": "Processed coal consumption",
+      "notes": "15,525 rows, 1965-2024"
+    },
+    {
+      "timestamp": "2025-12-14T17:05:10.599942",
+      "action": "Data quality checks complete",
+      "notes": "2 datasets analyzed"
+    },
+    {
+      "timestamp": "2025-12-14T17:05:10.601351",
+      "action": "Parquet not available",
+      "notes": "Falling back to CSV"
+    },
+    {
+      "timestamp": "2025-12-14T17:05:11.359145",
+      "action": "Exported coal emissions",
+      "notes": "..\\datasets\\processed\\coal_emissions.csv"
+    },
+    {
+      "timestamp": "2025-12-14T17:05:11.793417",
+      "action": "Exported coal consumption",
+      "notes": "..\\datasets\\processed\\coal_consumption.csv"
+    },
+    {
+      "timestamp": "2025-12-14T17:05:12.070373",
+      "action": "Generated data dictionary",
+      "notes": "33 columns documented"
+    }
+  ]
+}

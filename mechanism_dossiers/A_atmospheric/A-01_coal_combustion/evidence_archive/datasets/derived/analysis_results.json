@@ -1,0 +1,125 @@
+{
+  "mechanism": "A-01",
+  "pipeline": "02_analysis",
+  "run_timestamp": "2025-12-14T17:05:26.125516",
+  "results": {
+    "latest_year": 2024,
+    "global_coal_co2_mt": 15805.254,
+    "top_emitter": "China",
+    "top_emitter_share_pct": 58.96,
+    "countries_analyzed": 217,
+    "years_covered": "1900-2024"
+  },
+  "scenarios": {
+    "current_trajectory": "Current policies trajectory (+0.5%/yr)",
+    "accelerated_phaseout": "1.5C-aligned phaseout (-7%/yr)",
+    "delayed_action": "Delayed action (+2%/yr until 2030, then -5%/yr)",
+    "net_zero_2050": "Net zero by 2050 (-4.3%/yr)"
+  },
+  "carbon_budgets": {
+    "1.5C_50pct": {
+      "total_budget_gt": 500,
+      "coal_share": 0.4,
+      "coal_budget_gt": 200,
+      "description": "1.5\u00b0C with 50% probability"
+    },
+    "2C_50pct": {
+      "total_budget_gt": 1350,
+      "coal_share": 0.4,
+      "coal_budget_gt": 540,
+      "description": "2\u00b0C with 50% probability"
+    }
+  },
+  "analysis_log": [
+    {
+      "timestamp": "2025-12-14T17:05:25.351850",
+      "step": "Analysis started",
+      "result": "Mechanism A-01"
+    },
+    {
+      "timestamp": "2025-12-14T17:05:25.515953",
+      "step": "Loaded coal emissions (CSV)",
+      "result": "31,584 rows"
+    },
+    {
+      "timestamp": "2025-12-14T17:05:25.584277",
+      "step": "Loaded coal consumption (CSV)",
+      "result": "15,525 rows"
+    },
+    {
+      "timestamp": "2025-12-14T17:05:25.605617",
+      "step": "Filtered to countries",
+      "result": "217 countries"
+    },
+    {
+      "timestamp": "2025-12-14T17:05:25.609131",
+      "step": "World data extracted",
+      "result": "125 years"
+    },
+    {
+      "timestamp": "2025-12-14T17:05:25.732542",
+      "step": "Computed derived metrics",
+      "result": "YoY change, 5yr avg, coal share of CO2"
+    },
+    {
+      "timestamp": "2025-12-14T17:05:25.759077",
+      "step": "Latest year rankings (2024)",
+      "result": "Top 20 countries"
+    },
+    {
+      "timestamp": "2025-12-14T17:05:25.785389",
+      "step": "Cumulative rankings computed",
+      "result": "Historical attribution"
+    },
+    {
+      "timestamp": "2025-12-14T17:05:25.936668",
+      "step": "Trend analysis complete",
+      "result": "20 countries analyzed"
+    },
+    {
+      "timestamp": "2025-12-14T17:05:25.950727",
+      "step": "Global coal CO2 (latest)",
+      "result": "15805 Mt CO2"
+    },
+    {
+      "timestamp": "2025-12-14T17:05:25.955797",
+      "step": "Scenario projections computed",
+      "result": "4 scenarios to 2050"
+    },
+    {
+      "timestamp": "2025-12-14T17:05:26.000298",
+      "step": "Carbon budget analysis complete",
+      "result": "8 combinations analyzed"
+    },
+    {
+      "timestamp": "2025-12-14T17:05:26.065259",
+      "step": "Regional aggregation complete",
+      "result": "6 regions"
+    },
+    {
+      "timestamp": "2025-12-14T17:05:26.090729",
+      "step": "Exported country rankings",
+      "result": "..\\datasets\\derived\\country_rankings.csv"
+    },
+    {
+      "timestamp": "2025-12-14T17:05:26.100692",
+      "step": "Exported trend analysis",
+      "result": "..\\datasets\\derived\\trend_analysis.csv"
+    },
+    {
+      "timestamp": "2025-12-14T17:05:26.107331",
+      "step": "Exported scenario projections",
+      "result": "..\\datasets\\derived\\scenario_projections.csv"
+    },
+    {
+      "timestamp": "2025-12-14T17:05:26.109899",
+      "step": "Exported carbon budget analysis",
+      "result": "..\\datasets\\derived\\carbon_budget_analysis.csv"
+    },
+    {
+      "timestamp": "2025-12-14T17:05:26.122982",
+      "step": "Exported regional emissions",
+      "result": "..\\datasets\\derived\\regional_emissions.csv"
+    }
+  ]
+}
