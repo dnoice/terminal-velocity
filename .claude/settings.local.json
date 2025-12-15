@@ -7,7 +7,9 @@
       "Bash(dir:*)",
       "Bash(python:*)",
       "Bash(echo:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nfeat: Complete Terminal Velocity framework with A-01 data pipeline\n\nFramework Structure:\n- 50 mechanism dossiers scaffolded across 6 damage vectors (A-F)\n- 7 components per dossier: damage_report, pathway_analysis, driver_profile,\n  evidence_archive, uncertainty_register, intervention_assessment, connection_map\n- Shared computational core with environment specs and utilities\n- Evidence vault for centralized dataset management\n- Connection atlas for cross-mechanism mapping\n\nA-01 Coal Combustion Chain (Fully Implemented):\n- Data pipeline: 01_intake.py downloads from Our World in Data\n  - CO2 emissions (Global Carbon Project): 50,411 rows, 1750-2024\n  - Energy consumption (Energy Institute): 23,195 rows, 1900-2024\n- Analysis pipeline: 02_analysis.py computes:\n  - Country rankings (China: 59% of global coal CO2)\n  - Trend analysis (peak years, growth/decline status)\n  - Scenario projections (4 pathways to 2050)\n  - Carbon budget analysis (1.5C budget exhausted by 2036 on current path)\n  - Regional aggregation (6 regions)\n- Output pipeline: 03_outputs.py generates:\n  - 6 publication-quality figures (Terminal Velocity color palette)\n  - 3 summary tables\n  - Output manifest for provenance\n\nKey Findings:\n- Global coal CO2: 15,805 Mt/year (2024)\n- Top 5 emitters: 83% of global (China, India, USA, Indonesia, Japan)\n- Only accelerated phaseout (-7%/yr) stays within 1.5C budget\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git push:*)"
     ]
   }
 }
